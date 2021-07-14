@@ -1,5 +1,18 @@
 # Milestone 1: The Semantic-Conceptual Model 
 
+# Instructor's Feedback 
+
+```
+Grade: 15/20
+
+1. 16 strong entities were required, you only provided 11. -3
+2. Missing aggregation -1
+3. You have more than 21 weak entities in your diagram, however in your entity description you only have a few of them. What happends with the other weak entities? -1 
+
+
+
+```
+
 The goal of this milestone is to create a complete technical document that will define in detail the conceptual 
 design and architecture of your database system. Note that this milestone is a professional document that is read 
 by technical and non-technical people and teams (i,e CEO, CTO, Project Managers, Founders, Engineers, Testers....).
