@@ -11,6 +11,9 @@ in the final project.
 
 After milestone 2 is completed, M1 and M2 become a single technical DB document with all the documentation needed 
 to understand the design and architecture of your database system.
+# Updated on ERD
+The update on this ERD focused on making the diagram more readble and organized. Secondly, this new version of the diagram removed all duplicate middle tables that belong to a many-to-many relationships and replaced them using aggregation. There was a lot of aggregationg used in order to replace these duplicated middle tables 
+
 
 ## TODO Before Next Section 
 
