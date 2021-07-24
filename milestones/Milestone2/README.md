@@ -1,5 +1,20 @@
 # Milestone 2: The Relational Model 
 
+# Instructor Feedback 
+
+```
+-- Althrough not part of this milestone, you forgot to add the testing table from M1 to your M2 document 
+
+-- You did not check your testing table properly, I found a few logical errors, also if you set everything to CASCADE or SET NULL that is not going to fix the logical errors. Some entities cannot be deleted because they are needed by the system.....
+
+-- Your inserts file throws errors (see below) if I can't have sample data in your database, then I can't do futher tests. : 
+
+Error Code: 1452. Cannot add or update a child row: a foreign key constraint fails (`hospitalmanagementdb`.`hospital`, CONSTRAINT `FK_HOSPITAL_ACCOUNT` FOREIGN KEY (`account`) REFERENCES `account` (`account_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+
+
+
+```
+
 The goal of this milestone is to create a complete technical document that will define in detail the logical 
 design and architecture of your database system. Note that this milestone is a professional document that is read by 
 technical and non-technical people and teams (i,e CEO, CTO, Project Managers, Founders, Engineers, Testers....).
