@@ -13,8 +13,9 @@ import database as db
 # environment variables
 token = os.environ['DISCORD_TOKEN']
 server = os.environ['DISCORD_GUILD']
-server_id = os.environ['SERVER_ID']  # optional
-channel_id = os.environ['CHANNEL_ID']  # optional
+
+#server_id = os.environ['SERVER_ID']  # optional
+#channel_id = os.environ['CHANNEL_ID']  # optional
 
 # database connection
 # secret keys related to your database must be updated. Otherwise, it won't work
@@ -51,6 +52,19 @@ async def on_message(message):
         msg = message.content.lower()
         if "milestone3" in msg:
             response = "I am alive. Signed: 'your bot'"
+        if "Get patients using the most amount of medical prescriptions at First Choice Hospital":
+          response = await db.problem1(db_conn)
+        if "get" in msg and "nurse's" in msg and "profiles" in msg:
+            response = await db.problem2(db_conn)
+        if "first" in msg and "patient" in msg and "medical" in msg and "record" in msg:
+            response = await db.problem6(db_conn)
+        if "get" in msg and "employees" in msg and "live" in msg and "together" in msg:
+            response = await db.problem8(db_conn)
+        if "get" in msg and "list" in msg and "of appointments" in msg and "for" in msg and "doctor" in msg:
+            response = await db.problem4(db_conn)
+        if "get all doctors living in" in msg:
+          string = "get all doctors living in"
+          response = await db.problem3(db_conn, string)
     if response:
         # bot sends response to the Discord API and the response is show
         # on the channel from your Discord server that triggered this method.
