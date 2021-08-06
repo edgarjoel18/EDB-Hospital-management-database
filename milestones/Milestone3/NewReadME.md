@@ -4,7 +4,7 @@ Edgar Catalan
 920829907
 ## Discord Server: 
 https://discord.gg/Ay4GqNUg
-## The link to your repl app: 
+## The link to repl app: 
 https://replit.com/join/nhaikrbyzg-edgarjoel
 ## The commands the user needs to use so your bot can trigger the right output: 
 Here are the list of commands for the bot:
